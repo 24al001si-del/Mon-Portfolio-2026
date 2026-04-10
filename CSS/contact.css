@@ -1,0 +1,246 @@
+
+.contact {
+    text-align: center;
+    padding: 60px 80px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: var(--violet-doux);
+    margin-bottom: 10px;
+}
+
+.contact h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--violet-doux);
+    margin: 10px auto 50px;
+}
+
+.contact-conteneur {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    text-align: left;
+}
+
+.contact-infos {
+    background-color: var(--violet-doux);
+    border-radius: 15px;
+    padding: 40px 30px;
+    color: white;
+}
+
+.contact-infos h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.contact-infos p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    opacity: 0.9;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.info-item i {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.contact-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.contact-socials a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.contact-socials a:hover {
+    opacity: 0.7;
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-groupe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-groupe label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--gris-tres-fonce);
+    font-size: 0.95rem;
+}
+
+.form-groupe input,
+.form-groupe textarea {
+    border: 2px solid var(--gris-clair);
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.form-groupe input:focus,
+.form-groupe textarea:focus {
+    border-color: var(--violet-doux);
+}
+
+.form-groupe textarea {
+    resize: vertical;
+}
+
+.btn-envoyer {
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-envoyer:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-2px);
+}
+
+.confirmation {
+    display: none;
+    margin-top: 15px;
+    color: green;
+    font-weight: 600;
+}
+
+/* =====================
+   SEPARATEUR
+===================== */
+.separateur {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 25px 0;
+}
+
+.socials-titre {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* =====================
+   BOUTONS RÉSEAUX
+===================== */
+.contact-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+}
+
+.social-btn:hover {
+    opacity: 0.85;
+    transform: translateX(5px);
+}
+
+.social-btn i {
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* Couleurs par réseau */
+.social-btn.whatsapp {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.social-btn.whatsapp:hover {
+    background-color: #25D366;
+    opacity: 1;
+    transition: background-color 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+}
+
+.social-btn.github {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.social-btn.github:hover {
+    background-color: #333;
+    opacity: 1;
+    transition: background-color 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+}
+
+.social-btn.linkedin {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.social-btn.linkedin:hover {
+    background-color: #0077b5;
+    opacity: 1;
+    transition: background-color 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+}
+
+.social-btn.facebook {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.social-btn.facebook:hover {
+    background-color: #1877f2;
+    opacity: 1;
+    transition: background-color 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+}
+
+.social-btn.twitter {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.social-btn.twitter:hover {
+    background-color: #000;
+    opacity: 1;
+    transition: background-color 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+}

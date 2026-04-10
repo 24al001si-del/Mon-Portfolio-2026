@@ -1,0 +1,146 @@
+/* =====================
+   HERO PASSIONS
+===================== */
+.passions-hero {
+    background: linear-gradient(135deg, var(--violet-doux), var(--violet-fonce));
+    text-align: center;
+    padding: 70px 80px;
+    color: white;
+}
+
+.passions-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: rgb(193, 193, 230);
+}
+
+.passions-hero h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(193, 193, 230);
+    margin: 10px auto 0;
+}
+
+.passions-hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* =====================
+   SECTION CARTES
+===================== */
+.passions-section {
+    padding: 60px 80px;
+}
+
+.passions-grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* =====================
+   CARTE PASSION
+===================== */
+.passion-carte {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.passion-carte:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.15);
+}
+
+/* =====================
+   ICONE
+===================== */
+.passion-icone {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.passion-icone i {
+    font-size: 1.6rem;
+}
+
+/* =====================
+   CONTENU
+===================== */
+.passion-contenu h3 {
+    color: var(--gris-tres-fonce);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.passion-contenu p {
+    color: var(--gris-fonce);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* =====================
+   TAGS
+===================== */
+.passion-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.passion-tags span {
+    background-color: var(--gris-clair);
+    color: var(--gris-tres-fonce);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* =====================
+   CITATION
+===================== */
+.citation-section {
+    padding: 0 80px 70px;
+}
+
+.citation {
+    background: linear-gradient(135deg, var(--violet-doux), var(--violet-fonce));
+    border-radius: 15px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.citation i {
+    font-size: 2rem;
+    opacity: 0.6;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.citation p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 20px;
+    opacity: 0.95;
+}
+
+.citation span {
+    font-weight: bold;
+    opacity: 0.8;
+    font-size: 0.95rem;
+}
